@@ -7,11 +7,11 @@ you  can find more in [my tutorial](https://dev.to/mhmdlotfy96/testing-a-rest-ap
 
 ### Project setup
 ```
-npm install
+yarn install
 ```
 
 ### Run Tests
 ```
-npm start
+yarn start
 ```
 

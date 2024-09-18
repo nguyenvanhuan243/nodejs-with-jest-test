@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const supertest = require("supertest");
 require('dotenv').config();
 
-const dbHost = process.env.MONGODB;
+const dbHost = process.env.MONGODB || "mongodb+srv://admin:123456@123@cluster0.vokhvfj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 beforeEach((done) => {
   console.log("########### MONGODB: ", dbHost)
   mongoose.connect(dbHost,

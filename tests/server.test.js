@@ -2,9 +2,12 @@ const app = require("../server");
 const Post = require("../models/Post");
 const mongoose = require("mongoose");
 const supertest = require("supertest");
+require('dotenv').config();
 
+const dbHost = process.env.MONGODB;
 beforeEach((done) => {
-  mongoose.connect("mongodb://localhost:27017/JestDB",
+  console.log("########### MONGODB: ", dbHost)
+  mongoose.connect(dbHost,
     { useNewUrlParser: true, useUnifiedTopology: true },
     () => done());
 });

@@ -12,6 +12,7 @@
   "author": "Huan Nguyen",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.17.1",
     "mongoose": "^5.12.3",
     "supertest": "^4.0.2"
